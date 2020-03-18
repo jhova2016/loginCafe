@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:backgroundTint="@color/color1"
+    >
+    <ImageView
+
+        android:id="@+id/ImagenCarta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cafe"
+            android:textSize="50dp"
+            android:background="@color/color2"
+            android:gravity="center"
+            android:fontFamily="@font/unforgottenmore1"
+            >
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <Button
+                android:id="@+id/cancelarañadir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cancelar"
+                android:layout_weight="1"
+                android:background="@color/color1"
+                >
+
+            </Button>
+            <Button
+                android:id="@+id/añadir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="añadir"
+                android:layout_weight="1"
+                android:background="@color/color4"
+                >
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
